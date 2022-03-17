@@ -14,7 +14,9 @@
             background:rgb(100,100,100);
         }
 
+        
         .mobileMenu{
+            display:none;
             font-size:4vw;
             background:white;
             position:absolute;
@@ -82,7 +84,7 @@
             transition-property:left;
             display:block;
             box-sizing: border-box;
-            border:4px solid rgb(100,100,100);
+            border:1vw solid rgb(100,100,100);
         }
 
         .mobileMenu li.indicator::before{
@@ -93,7 +95,7 @@
             background:transparent;
             width:1em;
             height:1em;
-            border-top-right-radius:80%;
+            border-top-right-radius:50%;
             box-shadow:0em -0.5em 0em 0em rgb(100,100,100);
         }
 
@@ -105,7 +107,7 @@
             background:transparent;
             width:1em;
             height:1em;
-            border-top-left-radius:80%;
+            border-top-left-radius:50%;
             box-shadow:0em -0.5em 0em 0em rgb(100,100,100);
         }
 
@@ -138,6 +140,14 @@
             left: 83.8vw;
             z-index: 100;
         }
+
+        @media only screen and (max-width: 600px) {
+            .mobileMenu{
+                display:block;
+            }
+
+        }
+
 
     </style>
 </head>
